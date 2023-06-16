@@ -1,26 +1,6 @@
-# Next.js Crash Course Project
+<h2>Run on your Machine</h2>
 
-Project from my Next.js crash course on YouTube
-
-### Run the development server:
-
-```bash
-npm run dev
-```
-
-### Build for production AND generate static website into "out" folder:
-
-```bash
-npm run build
-```
-
-### Run in production:
-
-```bash
-npm start
-```
-
-### API Routes:
-
-GET /api/articles
-GET /api/articles/:id
+1. Clone Repository: [[https://github.com/Tremeros/HexOcean.git](https://github.com/Tremeros/Widget.git)](https://github.com/Tremeros/Widget.git)
+2. npm install
+3. npm run dev
+4. visit http://localhost:3000/
