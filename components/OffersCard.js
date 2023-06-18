@@ -37,17 +37,17 @@ const OffersCard = ({ countryOffers }) => {
         <ul>
           {_offersList}
         </ul>
-        {!showAllOffers && <AllOffersWrapper>
-          <Typography
-            onClick={showAllOffersHandler}
-            color={theme.colors.blue}
-            fontSize={1.4}
-            fontWeight={600}
-            lineHeight={17}
-            cursor="pointer">
-              See all offers
-            </Typography>
-          <Image src="/arrow-left.svg" width={65} height={34} alt="An SVG of an eye" />
+        {!showAllOffers && <AllOffersWrapper
+          onClick={showAllOffersHandler}>
+            <Typography
+              color={theme.colors.blue}
+              fontSize={1.4}
+              fontWeight={600}
+              lineHeight={17}
+              cursor="pointer">
+                See all offers
+              </Typography>
+            <Image src="/arrow-left.svg" width={65} height={34} alt="An SVG of an eye" />
         </AllOffersWrapper>}
     </ListWrapper>
 }

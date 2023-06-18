@@ -11,6 +11,7 @@ export const AllOffersWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 18px;
+  cursor: pointer;
 `
 
 export const ImageWrapper = styled.div`

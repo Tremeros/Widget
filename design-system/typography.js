@@ -10,7 +10,6 @@ export const Typography = styled.span`
         lineHeight = 16,
         textAlign = 'center',
         textDecoration = 'none',
-        cursor = 'auto',
      }) => css`
          font-style: ${fontStyle};
          font-weight: ${fontWeight};
@@ -19,6 +18,5 @@ export const Typography = styled.span`
          text-align: ${textAlign};
          color: ${color};
          text-decoration: ${textDecoration};
-         cursor: ${cursor};
 	`}
 `
