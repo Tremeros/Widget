@@ -1,34 +1,21 @@
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import OfferElement from './OfferElement';
 import { Typography } from '../design-system/typography';
 import { v4 as uuidv4 } from 'uuid';
 import theme from '../styles/theme';
 import { ListWrapper, AllOffersWrapper, ImageWrapper, Title } from '../styles/listItem';
+import { useCreateOffersList } from '../hooks/use-create-offers-list';
 
 
 const OffersCard = ({ countryOffers }) => {
-  const [offersList, setOffersList] = useState([]);
-  const [showAllOffers, setShowAllOffers] = useState(false);
+
   const { country, offers } = countryOffers;
 
-  useEffect(() => {
-    if (offers.length <= 3) {
-      setShowAllOffers(true);
-    }
-
-    const _offers = !showAllOffers ? offers.slice(0, 3) : offers;
-    setOffersList(_offers);
-
-  }, [showAllOffers])
+  const { offersList, showAllOffers, showAllOffersHandler } = useCreateOffersList(offers);
 
   const _offersList = offersList?.map(offer => {
       return <OfferElement key={uuidv4()} offer={offer} />
-    })
-
-  const showAllOffersHandler = () => {
-    setShowAllOffers(true);
-  }
+    });
 
     return <ListWrapper>
          <ImageWrapper>
