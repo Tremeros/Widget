@@ -26,7 +26,3 @@ export const WidgetList = styled.ul`
     grid-template-columns: 1fr 1fr 1fr;
    }
 `
-
-export const ButtonWrapper = styled.div`
-  margin: 40px 0;
-`

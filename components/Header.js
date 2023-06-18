@@ -1,7 +1,8 @@
-import Button from '../design-system/button';
-import {isMobile} from 'react-device-detect';
+import { Button } from '../design-system/button';
+import { isMobile } from 'react-device-detect';
 import { Typography } from '../design-system/typography';
-import { HeaderWrapper, ButtonWrapper, Title } from '../styles/header';
+import { HeaderWrapper, Title } from '../styles/header';
+import theme from '../styles/theme';
 
 const Header = () => {
 
@@ -10,8 +11,16 @@ const Header = () => {
           <Title>
             Big saving on all inclusive trips
           </Title>
-          {!isMobile && <ButtonWrapper>
-              <Button>
+          {!isMobile &&
+              <Button
+                  backgroundColor={theme.colors.button}
+                  width="176px"
+                  height="49px"
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  padding="5px 30px"
+                  borderRadius={6}>
                 <Typography
                   color="#000000"
                   fontSize={1.6}
@@ -19,8 +28,7 @@ const Header = () => {
                   lineHeight={19}>
                   See all offers
                 </Typography>
-              </Button>
-            </ButtonWrapper>}
+              </Button>}
         </HeaderWrapper>
     )
 }

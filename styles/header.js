@@ -11,11 +11,6 @@ export const HeaderWrapper = styled.div`
       justify-content: space-between;
      }
 `
-
-export const ButtonWrapper = styled.div`
-  width: 176px;
-`
-
 export const Title = styled.h1`
 font-style: normal;
 font-weight: 700;

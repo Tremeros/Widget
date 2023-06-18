@@ -1,25 +1,31 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Btn = styled.button`
-${({ theme }) => css`
-width: 100%;
-height: 49px;
+export const Button = styled.button`
+${({
+    backgroundColor = "#C7E7F5",
+    width = "auto",
+    height = "auto",
+    border = "none",
+    display = "block",
+    flexDirection = "row",
+    justifyContent = "center",
+    alignItems = "center",
+    padding,
+    margin,
+    borderRadius
+ }) => css`
+width: ${width};
+height: ${height};
 box-sizing: border-box;
-border: none;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 15px 30px;
-background: ${(theme.colors.button)};
-border-radius: 6px;
+border: ${border};
+display: ${display};
+flex-direction: ${flexDirection};
+justify-content: ${justifyContent};
+align-items: ${alignItems};
+padding: ${padding};
+margin: ${margin};
+background: ${(backgroundColor)};
+border-radius: ${borderRadius}px;
 `}
 `
-
-const Button = ({children}) => {
-    return <Btn>
-        {children}
-    </Btn>
-}
-
 export default Button;

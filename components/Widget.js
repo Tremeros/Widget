@@ -1,9 +1,10 @@
 import Header from './Header';
 import ListItem from './OffersCard';
-import Button from '../design-system/button';
+import {Button} from '../design-system/button';
 import {isMobile} from 'react-device-detect';
 import { Typography } from '../design-system/typography';
-import {WidgetWrapper, WidgetList, ButtonWrapper} from '../styles/widget';
+import {WidgetWrapper, WidgetList } from '../styles/widget';
+import theme from '../styles/theme';
 
 
 const Widget = ({ datas }) => {
@@ -17,8 +18,17 @@ const Widget = ({ datas }) => {
           <WidgetList>
             {datasList}
           </WidgetList>
-          {isMobile && <ButtonWrapper>
-            <Button>
+          {isMobile &&
+            <Button
+                backgroundColor={theme.colors.button}
+                width="100%"
+                height="49px"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                padding="5px 30px"
+                margin="40px 0"
+                borderRadius={6}>
             <Typography
                   color="#000000"
                   fontSize={1.6}
@@ -26,8 +36,7 @@ const Widget = ({ datas }) => {
                   lineHeight={19}>
                   See all offers
                 </Typography>
-              </Button>
-            </ButtonWrapper>}
+              </Button>}
         </WidgetWrapper>
     )
 }
