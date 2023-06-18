@@ -5,8 +5,6 @@ import { HeaderWrapper, ButtonWrapper, Title } from '../styles/header';
 
 const Header = () => {
 
-  const fontSize = isMobile ? 2.1 : 3.2
-
     return (
         <HeaderWrapper>
           <Title>
