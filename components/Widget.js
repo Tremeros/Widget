@@ -1,9 +1,9 @@
 import Header from './Header';
 import ListItem from './OffersCard';
-import {Button} from '../design-system/button';
-import {isMobile} from 'react-device-detect';
+import Button from '../design-system/button';
+import { isMobile } from 'react-device-detect';
 import { Typography } from '../design-system/typography';
-import {WidgetWrapper, WidgetList } from '../styles/widget';
+import { WidgetWrapper, WidgetList } from '../styles/widget';
 import theme from '../styles/theme';
 
 

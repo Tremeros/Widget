@@ -1,4 +1,4 @@
-import { Button } from '../design-system/button';
+import Button from '../design-system/button';
 import { isMobile } from 'react-device-detect';
 import { Typography } from '../design-system/typography';
 import { HeaderWrapper, Title } from '../styles/header';
