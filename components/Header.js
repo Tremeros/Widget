@@ -9,11 +9,9 @@ const Header = () => {
 
     return (
         <HeaderWrapper>
-          <Typography
-            fontSize={fontSize}
-            fontWeight={700}>
+          <Title>
             Big saving on all inclusive trips
-          </Typography>
+          </Title>
           {!isMobile && <ButtonWrapper>
               <Button>
                 <Typography

@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const OfferElementWrapper = styled.div`
+${({ theme }) => css`
   width: auto;
   height: auto;
-  padding: 1.8rem;
+  padding: 18px;
   border-radius: 6px;
   display: flex;
   flex-direction: row;
@@ -11,8 +12,9 @@ export const OfferElementWrapper = styled.div`
   justify-content: space-between;
 
   &:nth-of-type(even) {
-    background-color: #F3F4F6;
+    background-color: ${theme.colors.grey};
   }
+  `}
 `
 
 export const OfferTitleWrapper = styled.div`
@@ -26,14 +28,14 @@ export const OfferTitleContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 0;
 `
 
 export const DateWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 0;
 gap: 5px;
 `
 

@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const HeaderWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 20px 0;
+
+    @media (min-width: 900px) {
+      justify-content: space-between;
+     }
 `
 
 export const ButtonWrapper = styled.div`
@@ -15,6 +19,11 @@ export const ButtonWrapper = styled.div`
 export const Title = styled.h1`
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
 line-height: 39px;
+font-size: 2rem;
+
+@media (min-width: 900px) {
+  font-size: 3.2rem;
+ }
+ }
 `

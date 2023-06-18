@@ -9,14 +9,16 @@ export const Typography = styled.span`
         fontStyle = 'normal',
         lineHeight = 16,
         textAlign = 'center',
-        textDecoration = 'none'
+        textDecoration = 'none',
+        cursor = 'auto',
      }) => css`
-  font-style: ${fontStyle};
-  font-weight: ${fontWeight};
-  font-size: ${fontSize}rem;
-  line-height: ${lineHeight}px;
-  text-align: ${textAlign};
-  color: ${color};
-  text-decoration: ${textDecoration};
+         font-style: ${fontStyle};
+         font-weight: ${fontWeight};
+         font-size: ${fontSize}rem;
+         line-height: ${lineHeight}px;
+         text-align: ${textAlign};
+         color: ${color};
+         text-decoration: ${textDecoration};
+         cursor: ${cursor};
 	`}
 `

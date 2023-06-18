@@ -22,7 +22,8 @@ const OfferElement = ({ offer }) => {
               color="#000000"
               fontSize={1.6}
               fontWeight={700}
-              lineHeight={19}>
+              lineHeight={19}
+              textAlign="start">
               {name}
             </Typography>
             <Stars quality={quality} />

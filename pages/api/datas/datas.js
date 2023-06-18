@@ -41,7 +41,7 @@ export const datas = [
         offers: [
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality: 3,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,
@@ -51,7 +51,7 @@ export const datas = [
             },
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality: 4,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,
@@ -61,7 +61,7 @@ export const datas = [
             },
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality: 1,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,
@@ -117,7 +117,7 @@ export const datas = [
             },
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality: 1,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,
@@ -137,7 +137,7 @@ export const datas = [
             },
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality:2,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,
@@ -157,7 +157,7 @@ export const datas = [
             },
             {
                 name: 'Nubia Aqua Beach Resort',
-                quality: 5,
+                quality: 4,
                 date: '18.11.2022',
                 lastMinute: true,
                 allInclusive: true,

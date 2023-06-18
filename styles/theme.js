@@ -7,7 +7,7 @@ export default {
 		white: "#ffffff",
 		button: "#C7E7F5",
 		red: "#FF5353",
-		blue: "#3068DE"
+		blue: "#3068DE",
+		grey: "#F3F4F6",
 	},
-	transition: '0.3s',
 }
