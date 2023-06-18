@@ -12,7 +12,8 @@ ${({
     alignItems = "center",
     padding,
     margin,
-    borderRadius
+    borderRadius,
+    boxShadow
  }) => css`
 width: ${width};
 height: ${height};
@@ -26,6 +27,7 @@ padding: ${padding};
 margin: ${margin};
 background: ${(backgroundColor)};
 border-radius: ${borderRadius}px;
+box-shadow: ${boxShadow};
 `}
 `
 export default Button;

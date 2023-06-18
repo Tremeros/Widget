@@ -20,7 +20,8 @@ const Header = () => {
                   justifyContent="center"
                   alignItems="center"
                   padding="5px 30px"
-                  borderRadius={6}>
+                  borderRadius={6}
+                  boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)">
                 <Typography
                   color="#000000"
                   fontSize={1.6}

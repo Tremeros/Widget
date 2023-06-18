@@ -20,7 +20,7 @@ const Widget = ({ datas }) => {
           </WidgetList>
           {isMobile &&
             <Button
-                backgroundColor={theme.colors.button}
+                backgroundColor={theme.colors.buttonMobile}
                 width="100%"
                 height="49px"
                 display="flex"
